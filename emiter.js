@@ -1,8 +1,7 @@
-const EventEmetter = require('events');
+const School = require('./emiter2');
 
-const emitter = new EventEmetter();
-emitter.on('Rich', (value) => {
+const school1 = new School();
+school1.on('Rich', (value) => {
     console.log(value);
 });
-
-emitter.emit('Rich', 'get gf');
+school1.school();
